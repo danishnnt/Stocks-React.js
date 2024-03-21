@@ -21,7 +21,7 @@ const SideNav = () => {
   
     return (
     <Stack  
-       boxShadow="sm"
+       boxShadow="lg"
        maxW="16rem"
        height="100vh"
        justify="space-between"
