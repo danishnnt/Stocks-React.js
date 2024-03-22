@@ -54,7 +54,7 @@ const SideNav = () => {
              
             >
              <Icon as={MdOutlineSupportAgent} /> 
-             <Text fontSize="14px" fontWeight="medium"
+             <Text fontSize="15px" fontWeight="medium"
              >
                 
                 Support</Text>
