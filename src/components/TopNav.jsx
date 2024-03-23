@@ -3,7 +3,7 @@ import React from "react";
 
 const TopNav = () => {
   return (
-    <Flex boxShadow="xl">
+    <Flex boxShadow="xl" >
       <Container>
         <Heading>Dashboard</Heading>
         <Menu>
