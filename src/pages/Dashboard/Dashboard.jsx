@@ -1,17 +1,12 @@
-import React from 'react'
-import SideNav from '../../components/SideNav'
-import TopNav from '../../components/TopNav'
-import { Flex ,Box } from '@chakra-ui/react'
+import DashboardLayout from "../../components/DashboardLayout"
 
-const Dashboard = () => {
+
+const Dashboard = ({  }) => {
   return (
-    
-      <Flex>
-        <SideNav/>
-            <Box flexGrow={1}>
-              <TopNav/>
-              </Box>
-        </Flex>
+     <DashboardLayout title="Dashboard">
+      <div> How are you </div>
+     </DashboardLayout>
+     
     
   )
 }

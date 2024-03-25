@@ -1,25 +1,25 @@
-import { Container, Flex, Menu , Heading, MenuButton, MenuItem, MenuList, Button } from "@chakra-ui/react";
+import { Container, Flex, Menu , Heading, MenuButton, MenuItem, MenuList, Box, Button, HStack, Icon } from "@chakra-ui/react";
 import React from "react";
+import { FaUserCircle } from "react-icons/fa";
 
-const TopNav = () => {
+const TopNav = ({title}) => {
   return (
-    <Flex boxShadow="xl" >
-      <Container>
-        <Heading>Dashboard</Heading>
-        <Menu>
-          <MenuButton as={Button}>
-            Actions
-          </MenuButton>
-          <MenuList>
-            <MenuItem>Download</MenuItem>
-            <MenuItem>Create a Copy</MenuItem>
-            <MenuItem>Mark as Draft</MenuItem>
-            <MenuItem>Delete</MenuItem>
-            <MenuItem>Attend a Workshop</MenuItem>
-          </MenuList>
-        </Menu>
-      </Container>
-    </Flex>
+    <Box >
+      < HStack minWidth="80rem"  h="16" justify="space-between" p="10" mx="auto" >
+      
+      <Heading fontSize="28px">{title}</Heading>
+      <Menu>
+        <MenuButton as={Button}>
+          <Icon fontSize="25px" as={FaUserCircle}/>
+        </MenuButton>
+        <MenuList>
+          <MenuItem>Log Out</MenuItem>
+          <MenuItem>Support</MenuItem>
+        </MenuList>
+      </Menu>
+    
+  </HStack>
+    </Box>
   );
 };
 
